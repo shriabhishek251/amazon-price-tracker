@@ -60,7 +60,7 @@ if price_as_float < BUY_PRICE:
 
     # ====================== Send the email ===========================
 
-    with smtplib.SMTP(os.getenv["SMTP_ADDRESS"], port=587) as connection:
+    with smtplib.SMTP(os.getenv("SMTP_ADDRESS"), port=587) as connection:
         connection.starttls()
         result = connection.login(os.getenv("EMAIL_ADDRESS"), os.getenv("EMAIL_PASSWORD"))
         connection.sendmail(
