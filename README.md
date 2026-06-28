@@ -73,5 +73,12 @@ python main.py
 * A Google App Password is required for Gmail SMTP authentication.
 * Never commit your `.env` file to GitHub.
 
+## ⚠️ GitHub Actions Note
+
+The project includes a GitHub Actions workflow for scheduled execution and demonstrates the use of GitHub Secrets for secure credential management.
+
+The scraper works correctly when run locally. However, automated runs from GitHub Actions may fail because Amazon can detect and block requests originating from cloud-hosted runners. This is a limitation imposed by Amazon's anti-bot protections rather than the scraping logic itself.
+
+
 ## Author
 Abhishek Kumar
